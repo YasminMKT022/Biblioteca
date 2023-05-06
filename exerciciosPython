@@ -1,0 +1,109 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOFcy5Ih9iRZFZ+9wiuVeze",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yasmelinss/Biblioteca/blob/main/exerciciosPython\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rkyT3csEDXg7",
+        "outputId": "0b9077dc-8ef6-405f-8f57-1a0168263ff6"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a nota do primeiro trabalho: 10\n",
+            "digite a nota do segundo trabalho: 5\n",
+            "digite a nota do terceiro trabalho: 2\n",
+            "digite a nota do quarto trabalho: 0\n",
+            "A média ponderada do aluno é: \n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2.1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ],
+      "source": [
+        "n1 = float(input('digite a nota do primeiro trabalho: '))\n",
+        "n2 = float(input('digite a nota do segundo trabalho: '))\n",
+        "n3 = float(input('digite a nota do terceiro trabalho: '))\n",
+        "n4 = float(input('digite a nota do quarto trabalho: '))\n",
+        "\n",
+        "media = ((n1*1) + (n2*1) + (n3*3) + (n4*5))\n",
+        "media_ponderada = media/(1+1+3+5)\n",
+        "\n",
+        "print('A média ponderada do aluno é: {}'.format(media_ponderada))\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "altura = float(input('digite a altura do triângulo: '))\n",
+        "base = float(input('digite a base do triângulo: '))\n",
+        "\n",
+        "area_tri = base*altura/2\n",
+        "\n",
+        "if area_tri > 10:\n",
+        "    print('maior')\n",
+        "else: \n",
+        "    print('menor ou igual')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y74uo0Dt89pC",
+        "outputId": "e4147d12-f5db-4196-d570-e6cfdbfd8ed0"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a altura do triângulo: 7\n",
+            "digite a base do triângulo: 8\n",
+            "maior\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
